@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control d'Assistencia | ENTI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="controller.js"></script>
+    <style>
+        .row>div{
+            border-radius: 5px;
+            border:1px solid black;
+        }
+        .barra{
+            background-color: lightgrey;
+        }
+        .title{
+            vertical-align: middle;
+        }
+        .header {
+        }
+        .body{
+            margin-top: 5px;
+        }
+        .bodyMenu>div{
+            margin-top: 10px;
+        }
+    </style>
+    <script src="controller.js"></script>
+</head>
+<body>
+    <div class="barra">
+        <div class="container">
+            <!-- Header \/ -->
+            <div class="row header">
+                <div class="col-md-3" align="center">
+                    <img src="logo-enti.png" class="img-rounded" alt="Cinque Terre" width="300">
+                </div>
+                <div class="title col-md-9">
+                    <div class="col-md-12" align="center"><h4>Control d'assistencia</h4></div>
+                    <div class="col-md-12" align="right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Administracio <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">GET SQL</a></li>
+                                <li><a href="#">Preferencies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body \/ -->
+    <div class="container">
+        <div class="row body">
+            <div class="col-md-8"></div>
+            <div class="col-md-4 bodyMenu">
+                <div class="col-md-12">
+                    <h5>Importar *.xls</h5>
+                    <form method="POST" action="#" enctype="multipart/form-data">
+                        <!-- File uploader START -->
+                        <div class="form-group">
+                            <div class="input-group input-file" name="Fichier1">
+                                <input type="text" class="form-control" placeholder='Choose a file...' />
+                                <span class="input-group-btn">
+        		                    <button class="btn btn-default btn-choose" type="button">Choose</button>
+    		                    </span>
+                            </div>
+                        </div>
+                        <!-- File uploader END -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary pull-right" disabled>Submit</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Veure Importació</button>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Cercar per Dia</button>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Cercar per Data</button>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Cercar per Alumne</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
