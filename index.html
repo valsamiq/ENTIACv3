@@ -14,10 +14,7 @@ and open the template in the editor.
     <link href="bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="controller.js"></script>
     <style>
-        .row>div{
-            border-radius: 5px;
-            border:1px solid black;
-        }
+
         .barra{
             background-color: lightgrey;
         }
@@ -32,19 +29,22 @@ and open the template in the editor.
         .bodyMenu>div{
             margin-top: 10px;
         }
+        .footer{
+            position: absolute;
+            bottom: 0;
+        }
     </style>
-    <script src="controller.js"></script>
 </head>
 <body>
     <div class="barra">
         <div class="container">
             <!-- Header \/ -->
             <div class="row header">
-                <div class="col-md-3" align="center">
+                <div class="col-md-3 align-middle" align="center">
                     <img src="logo-enti.png" class="img-rounded" alt="Cinque Terre" width="300">
                 </div>
                 <div class="title col-md-9">
-                    <div class="col-md-12" align="center"><h4>Control d'assistencia</h4></div>
+
                     <div class="col-md-12" align="right">
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Administracio <span class="caret"></span></button>
@@ -61,7 +61,35 @@ and open the template in the editor.
     <!-- Body \/ -->
     <div class="container">
         <div class="row body">
-            <div class="col-md-8"></div>
+            <div class="col-md-8">
+                <br/>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Curs</th>
+                            <th>Alumne</th>
+                            <th>Estat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grau2</td>
+                            <td>Doe</td>
+                            <td>Retard</td>
+                        </tr>
+                        <tr>
+                            <td>Artist</td>
+                            <td>Moe</td>
+                            <td>Absència</td>
+                        </tr>
+                        <tr>
+                            <td>Grau1</td>
+                            <td>Dooley</td>
+                            <td>Retard</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="col-md-4 bodyMenu">
                 <div class="col-md-12">
                     <h5>Importar *.xls</h5>
@@ -75,27 +103,33 @@ and open the template in the editor.
     		                    </span>
                             </div>
                         </div>
-                        <!-- File uploader END -->
+                        <!-- File uploader buttons -->
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary pull-right" disabled>Submit</button>
                             <button type="reset" class="btn btn-danger">Reset</button>
                         </div>
+                        <!-- File uploader END -->
                     </form>
                 </div>
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-block">Veure Importació</button>
+                    <button type="button" class="btn btn-secondary btn-block">Veure Importació</button>
                 </div>
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-block">Cercar per Dia</button>
+                    <button type="button" class="btn btn-secondary btn-block">Cercar per Dia</button>
                 </div>
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-block">Cercar per Data</button>
+                    <button type="button" class="btn btn-secondary btn-block">Cercar per Data</button>
                 </div>
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-block">Cercar per Alumne</button>
+                    <button type="button" class="btn btn-secondary btn-block">Cercar per Alumne</button>
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="text-muted col-md-12">
+                made by <a href="https://www.linkedin.com/in/aleix-ibern/">balsamiq</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
